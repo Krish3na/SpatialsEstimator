@@ -12,3 +12,42 @@ To install dependencies : `pip install -r requirements.txt`
 To execute the code : `python3 run_spatials_estimator.py`
 
 Please ensure the model paths of CREStereo and Segment-Anything are correct in "run_spatials_estimator.py" file before executing.
+
+## Demo
+
+<video autoplay loop muted playsinline>
+  <source src="spatials_estimator_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## Gallery
+
+### Process Flow
+![Process Flow Chart](ProcessFlowChart.png)
+
+### Input Images
+![RGB Image](RGB_Image.png)
+![Left Stereo Image](Left_Stereo_Image.png)
+![Right Stereo Image](Right_Stereo_Image.png)
+
+### Segmentation Results
+![Segmented Image](Segmented_Image.png)
+![Image Segmented](image_segmented.png)
+
+### ROI Detection
+![ROI](image_roi.png)
+![ROI 2](image_roi2.png)
+
+### Depth Estimation
+![Depth Map](image_depth.png)
+![Depths of Filtered Centroids](Depths_of_Filtered_Centroids.png)
+
+### Spatial Estimation Results
+![Centroid Spatials](image_centroid_spatials.png)
+![Spatials 1](image_spatials1.png)
+![Spatials 2](image_spatials2.png)
+![Spatials 3](image_spatials3.png)
+![Spatials 4](image_spatials4.png)
+
+### System Overview
+![Interactive Spatial Estimator](Interactive%20Spatial%20Estimator.png)
