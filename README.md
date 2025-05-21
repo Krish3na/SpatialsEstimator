@@ -15,9 +15,9 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 
 ## Demo
 
-[📹 Watch Demo Video (43MB)](spatials_estimator_demo.mp4)
+![Demo Animation](demo.gif)
 
-![Demo Thumbnail](RGB_Image.png)
+[📹 Watch Full Demo Video (43MB)](spatials_estimator_demo.mp4)
 
 ## Gallery
 
