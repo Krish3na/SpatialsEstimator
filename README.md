@@ -22,31 +22,47 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 ## Gallery
 
 ### Process Flow
-![Process Flow Chart](ProcessFlowChart.png)
+<img src="ProcessFlowChart.png" width="600">
 
 ### Input Images
-![RGB Image](RGB_Image.png)
-![Left Stereo Image](Left_Stereo_Image.png)
-![Right Stereo Image](Right_Stereo_Image.png)
+<p align="center">
+  <img src="RGB_Image.png" width="400" alt="RGB Image">
+  <img src="Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
+</p>
+<p align="center">
+  <img src="Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
+</p>
 
 ### Segmentation Results
-![Segmented Image](Segmented_Image.png)
-![Image Segmented](image_segmented.png)
+<p align="center">
+  <img src="Segmented_Image.png" width="400" alt="Segmented Image">
+  <img src="image_segmented.png" width="400" alt="Image Segmented">
+</p>
 
 ### ROI Detection
-![ROI](image_roi.png)
-![ROI 2](image_roi2.png)
+<p align="center">
+  <img src="image_roi.png" width="400" alt="ROI">
+  <img src="image_roi2.png" width="400" alt="ROI 2">
+</p>
 
 ### Depth Estimation
-![Depth Map](image_depth.png)
-![Depths of Filtered Centroids](Depths_of_Filtered_Centroids.png)
+<p align="center">
+  <img src="image_depth.png" width="400" alt="Depth Map">
+  <img src="Depths_of_Filtered_Centroids.png" width="400" alt="Depths of Filtered Centroids">
+</p>
 
 ### Spatial Estimation Results
-![Centroid Spatials](image_centroid_spatials.png)
-![Spatials 1](image_spatials1.png)
-![Spatials 2](image_spatials2.png)
-![Spatials 3](image_spatials3.png)
-![Spatials 4](image_spatials4.png)
+<p align="center">
+  <img src="image_centroid_spatials.png" width="400" alt="Centroid Spatials">
+  <img src="image_spatials1.png" width="400" alt="Spatials 1">
+</p>
+<p align="center">
+  <img src="image_spatials2.png" width="400" alt="Spatials 2">
+  <img src="image_spatials3.png" width="400" alt="Spatials 3">
+</p>
+<p align="center">
+  <img src="image_spatials4.png" width="400" alt="Spatials 4">
+</p>
 
 ### System Overview
-![Interactive Spatial Estimator](Interactive%20Spatial%20Estimator.png)
+<img src="Interactive%20Spatial%20Estimator.png" width="800" alt="Interactive Spatial Estimator">
