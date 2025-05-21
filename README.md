@@ -15,10 +15,9 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 
 ## Demo
 
-<video autoplay loop muted playsinline>
-  <source src="spatials_estimator_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[📹 Watch Demo Video (43MB)](spatials_estimator_demo.mp4)
+
+![Demo Thumbnail](RGB_Image.png)
 
 ## Gallery
 
