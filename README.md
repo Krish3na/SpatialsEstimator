@@ -54,7 +54,6 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 ### Spatial Estimation Results
 <p align="center">
   <img src="image_centroid_spatials.png" width="400" alt="Centroid Spatials">
-  <img src="image_spatials1.png" width="400" alt="Spatials 1">
 </p>
 <p align="center">
   <img src="image_spatials2.png" width="400" alt="Spatials 2">
