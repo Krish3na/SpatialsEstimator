@@ -35,7 +35,6 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 
 ### Segmentation Results
 <p align="center">
-  <img src="Segmented_Image.png" width="400" alt="Segmented Image">
   <img src="image_segmented.png" width="400" alt="Image Segmented">
 </p>
 
@@ -43,12 +42,6 @@ Please ensure the model paths of CREStereo and Segment-Anything are correct in "
 <p align="center">
   <img src="image_roi.png" width="400" alt="ROI">
   <img src="image_roi2.png" width="400" alt="ROI 2">
-</p>
-
-### Depth Estimation
-<p align="center">
-  <img src="image_depth.png" width="400" alt="Depth Map">
-  <img src="Depths_of_Filtered_Centroids.png" width="400" alt="Depths of Filtered Centroids">
 </p>
 
 ### Spatial Estimation Results
