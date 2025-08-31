@@ -2,6 +2,16 @@
 
 A real-time spatial coordinate estimation system using stereo vision and computer vision techniques for precise 3D object localization and depth analysis.
 
+## Demo
+
+![Demo Animation](spatials_estimator.gif)
+
+[📹 Watch Full Demo Video (43MB)](spatials_estimator_demo.mp4)
+
+## System Overview
+
+<img src="Interactive%20Spatial%20Estimator.png" width="800" alt="Interactive Spatial Estimator">
+
 ## Overview
 
 The Spatials Estimator is an advanced computer vision system that combines stereo depth estimation with semantic segmentation to provide accurate spatial coordinates of objects in 3D space. The system leverages the OAK-D-Pro camera platform with integrated depth sensing capabilities and employs state-of-the-art deep learning models for robust object detection and spatial analysis.
@@ -22,6 +32,9 @@ The system employs a two-stage pipeline:
 1. **Depth Estimation**: CREStereo model for high-precision stereo depth mapping
 2. **Object Segmentation**: Segment Anything Model (SAM) for semantic object identification
 3. **Spatial Calculation**: Geometric algorithms for 3D coordinate computation
+
+### Process Flow
+<img src="ProcessFlowChart.png" width="600">
 
 ## Dataset and Models
 
@@ -50,12 +63,30 @@ The system employs a two-stage pipeline:
 disparity_map, depth_map = spatials_estimator.get_maps(left_frame, right_frame)
 ```
 
+**Input Images from Stereo Camera:**
+<p align="center">
+  <img src="RGB_Image.png" width="400" alt="RGB Image">
+  <img src="Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
+</p>
+<p align="center">
+  <img src="Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
+</p>
+
 #### 2. Segmentation Pipeline
 ```python
 # Automatic mask generation using SAM
 roi_image = spatials_estimator.create_roi(left_frame, roi_corners)
 spatials_estimator.generate_masks(roi_image)
 ```
+
+**ROI Detection and Segmentation:**
+<p align="center">
+  <img src="image_roi.png" width="400" alt="ROI">
+  <img src="image_roi2.png" width="400" alt="ROI 2">
+</p>
+<p align="center">
+  <img src="image_segmented.png" width="400" alt="Image Segmented">
+</p>
 
 #### 3. Spatial Calculation
 ```python
@@ -158,82 +189,7 @@ python3 run_spatials_estimator.py
 - Latency: <100ms end-to-end
 - Memory usage: <4GB GPU memory
 
-## Applications
-
-### Industrial Use Cases
-- Robotic arm positioning and object manipulation
-- Quality control and measurement systems
-- Autonomous navigation and obstacle avoidance
-- 3D reconstruction and modeling
-
-### Research Applications
-- Computer vision algorithm development
-- Depth estimation benchmarking
-- Multi-modal sensor fusion studies
-- Real-time spatial analysis research
-
-## Technical Specifications
-
-### Camera Configuration
-- **Resolution**: 720p (1280x720)
-- **Frame Rate**: 30 FPS
-- **Baseline**: 75mm (OAK-D-Pro)
-- **Field of View**: 71.9 degrees
-
-### Model Specifications
-- **CREStereo**: ONNX runtime with GPU acceleration
-- **SAM**: ViT-H architecture with 4B parameters
-- **Input Size**: 720x1280 pixels
-- **Output**: Real-time depth maps and spatial coordinates
-
-## Contributing
-
-This project demonstrates advanced computer vision techniques suitable for:
-- Data Engineering roles requiring real-time data processing
-- Machine Learning positions focused on computer vision
-- AI/ML Engineering roles involving sensor fusion
-- Research positions in spatial computing
-
-## License
-
-This project is developed for educational and research purposes in computer vision and spatial estimation.
-
-## Acknowledgments
-
-- **CREStereo**: High-performance stereo depth estimation
-- **Segment Anything Model**: Meta AI's zero-shot segmentation
-- **OAK-D Platform**: Luxonis for stereo camera hardware
-- **DepthAI**: Real-time AI inference framework
-## Demo
-
-![Demo Animation](spatials_estimator.gif)
-
-[📹 Watch Full Demo Video (43MB)](spatials_estimator_demo.mp4)
-
-## Gallery
-
-### Process Flow
-<img src="ProcessFlowChart.png" width="600">
-
-### Input Images
-<p align="center">
-  <img src="RGB_Image.png" width="400" alt="RGB Image">
-  <img src="Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
-</p>
-<p align="center">
-  <img src="Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
-</p>
-
-### Segmentation Results
-<p align="center">
-  <img src="image_segmented.png" width="400" alt="Image Segmented">
-</p>
-
-### ROI Detection
-<p align="center">
-  <img src="image_roi.png" width="400" alt="ROI">
-  <img src="image_roi2.png" width="400" alt="ROI 2">
-</p>
+## Results and Visualization
 
 ### Spatial Estimation Results
 <p align="center">
@@ -246,57 +202,6 @@ This project is developed for educational and research purposes in computer visi
 <p align="center">
   <img src="image_spatials4.png" width="400" alt="Spatials 4">
 </p>
-
-### System Overview
-<img src="Interactive%20Spatial%20Estimator.png" width="800" alt="Interactive Spatial Estimator">
-
-## Installation and Setup
-
-### Prerequisites
-```bash
-# System requirements
-CUDA 11.8
-cuDNN 8.7
-Ubuntu >= 20.04
-Python 3.10
-```
-
-### Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### Model Setup
-1. Download SAM ViT-H model from [Segment Anything repository](https://github.com/facebookresearch/segment-anything)
-2. Place model in: `segment-anything/segment_anything/models/sam_vit_h_4b8939.pth`
-3. Verify CREStereo model paths in `run_spatials_estimator.py`
-
-## Usage
-
-### Basic Execution
-```bash
-python3 run_spatials_estimator.py
-```
-
-### Output Files
-- `RGB_Image.png`: Captured RGB frame
-- `Left_Stereo_Image.png`: Left stereo camera image
-- `Right_Stereo_Image.png`: Right stereo camera image
-- `Segmented_Image.png`: Object segmentation visualization
-- `image_depth.png`: Depth map visualization
-- `image_spatials*.png`: Spatial coordinate plots
-
-## Performance Metrics
-
-### Accuracy
-- Depth estimation precision: ±2cm within 3m range
-- Spatial coordinate accuracy: ±5cm in X,Y,Z dimensions
-- Segmentation boundary precision: Pixel-level accuracy
-
-### Speed
-- Processing rate: 30 FPS (720p resolution)
-- Latency: <100ms end-to-end
-- Memory usage: <4GB GPU memory
 
 ## Applications
 
