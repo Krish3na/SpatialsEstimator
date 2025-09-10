@@ -4,9 +4,9 @@ A real-time spatial coordinate estimation system using stereo vision and compute
 
 ## Demo
 
-![Demo Animation](.\images\spatials_estimator.gif)
+![Demo Animation](./images/spatials_estimator.gif)
 
-[📹 Watch Full Demo Video (43MB)](.\images\spatials_estimator_demo.mp4)
+[📹 Watch Full Demo Video (43MB)](./images/spatials_estimator_demo.mp4)
 
 ## System Overview
 
