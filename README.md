@@ -66,7 +66,7 @@ disparity_map, depth_map = spatials_estimator.get_maps(left_frame, right_frame)
 **Input Images from Stereo Camera:**
 <p align="center">
   <img src=".\images\RGB_Image.png" width="400" alt="RGB Image">
-  <img src="Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
+  <img src=".\images\Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
 </p>
 <p align="center">
   <img src=".\images\Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
