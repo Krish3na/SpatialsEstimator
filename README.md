@@ -4,13 +4,13 @@ A real-time spatial coordinate estimation system using stereo vision and compute
 
 ## Demo
 
-![Demo Animation](spatials_estimator.gif)
+![Demo Animation](.\images\spatials_estimator.gif)
 
-[📹 Watch Full Demo Video (43MB)](spatials_estimator_demo.mp4)
+[📹 Watch Full Demo Video (43MB)](.\images\spatials_estimator_demo.mp4)
 
 ## System Overview
 
-<img src="Interactive%20Spatial%20Estimator.png" width="800" alt="Interactive Spatial Estimator">
+<img src=".\images\Interactive%20Spatial%20Estimator.png" width="800" alt="Interactive Spatial Estimator">
 
 ## Overview
 
@@ -34,7 +34,7 @@ The system employs a two-stage pipeline:
 3. **Spatial Calculation**: Geometric algorithms for 3D coordinate computation
 
 ### Process Flow
-<img src="ProcessFlowChart.png" width="600">
+<img src=".\images\ProcessFlowChart.png" width="600">
 
 ## Dataset and Models
 
@@ -65,11 +65,11 @@ disparity_map, depth_map = spatials_estimator.get_maps(left_frame, right_frame)
 
 **Input Images from Stereo Camera:**
 <p align="center">
-  <img src="RGB_Image.png" width="400" alt="RGB Image">
+  <img src=".\images\RGB_Image.png" width="400" alt="RGB Image">
   <img src="Left_Stereo_Image.png" width="400" alt="Left Stereo Image">
 </p>
 <p align="center">
-  <img src="Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
+  <img src=".\images\Right_Stereo_Image.png" width="400" alt="Right Stereo Image">
 </p>
 
 #### 2. Segmentation Pipeline
@@ -81,11 +81,11 @@ spatials_estimator.generate_masks(roi_image)
 
 **ROI Detection and Segmentation:**
 <p align="center">
-  <img src="image_roi.png" width="400" alt="ROI">
-  <img src="image_roi2.png" width="400" alt="ROI 2">
+  <img src=".\images\image_roi.png" width="400" alt="ROI">
+  <img src=".\images\image_roi2.png" width="400" alt="ROI 2">
 </p>
 <p align="center">
-  <img src="image_segmented.png" width="400" alt="Image Segmented">
+  <img src=".\images\image_segmented.png" width="400" alt="Image Segmented">
 </p>
 
 #### 3. Spatial Calculation
@@ -170,12 +170,12 @@ python3 run_spatials_estimator.py
 ```
 
 ### Output Files
-- `RGB_Image.png`: Captured RGB frame
-- `Left_Stereo_Image.png`: Left stereo camera image
-- `Right_Stereo_Image.png`: Right stereo camera image
-- `Segmented_Image.png`: Object segmentation visualization
-- `image_depth.png`: Depth map visualization
-- `image_spatials*.png`: Spatial coordinate plots
+- `.\images\RGB_Image.png`: Captured RGB frame
+- `.\images\Left_Stereo_Image.png`: Left stereo camera image
+- `.\images\Right_Stereo_Image.png`: Right stereo camera image
+- `.\images\Segmented_Image.png`: Object segmentation visualization
+- `.\images\image_depth.png`: Depth map visualization
+- `.\images\image_spatials*.png`: Spatial coordinate plots
 
 ## Performance Metrics
 
@@ -193,14 +193,14 @@ python3 run_spatials_estimator.py
 
 ### Spatial Estimation Results
 <p align="center">
-  <img src="image_centroid_spatials.png" width="400" alt="Centroid Spatials">
+  <img src=".\images\image_centroid_spatials.png" width="400" alt="Centroid Spatials">
 </p>
 <p align="center">
-  <img src="image_spatials2.png" width="400" alt="Spatials 2">
-  <img src="image_spatials3.png" width="400" alt="Spatials 3">
+  <img src=".\images\image_spatials2.png" width="400" alt="Spatials 2">
+  <img src=".\images\image_spatials3.png" width="400" alt="Spatials 3">
 </p>
 <p align="center">
-  <img src="image_spatials4.png" width="400" alt="Spatials 4">
+  <img src=".\images\image_spatials4.png" width="400" alt="Spatials 4">
 </p>
 
 ## Applications
